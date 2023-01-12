@@ -1,19 +1,33 @@
 
-1. Three Types of Comments
-Java comes with the support of three types of comments. Java programmers widely use the first two types, //, and /* */. Both of them are useful, but they don’t work with the revolutionary idea of JavaDoc.
+1. Do not use hyphens or underscores to separate multi-word identifiers (except for constants, which have all upper case letters).
 
-The JavaDoc utility program enables you to extract code comments into external HTML files. This utility is one of the best features of the Java Development Kit (JDK) and helps coders to easily create code documentation. If you have ever seen the Java API library, you already know how they make use of code documentation.
+Example
+float sumOfSquares = 0;
+final int DAYS_IN_YEAR = 365; //Use UPPER_CASE for constants (final variables)
 
-To make use of the JavaDoc utility, you need to use the third type of comment  /** */.
 
-2. Always Document API
-Application Programming Interface (API) helps connect software across different platforms. APIs are made for other people to use, and that’s why they should be documented. Before you start documenting your API, you need to understand the value of simplicity and conciseness. Always try to keep the two factors in check, as it will help you write great API documentation or documentation in general.
+2. Class names start with an upper case letter.
+Example
 
-3. Revisit the Code Documentation
-Code documentation can change shape over the timespan of a project. It is necessary to understand that when code evolves, the code documentation also evolves. So if you start writing code documentation too early, you will have to change it often. If you want to get a hold of the process of code documentation, it is a good idea to start late!
+class President {
+   //code...
+}
 
-4. Give Meaning to Your Code Documentation
-Code documentation is the key to making others understand what you have done. The code can be self-explanatory, but you need to make it meaningful. And that is why you should always try to answer the “Why” and let the code explain the “How.”
+3.In-line comments should be used to explain complicated sections of code, such as loops. Use the // comment delimiter for in-line comments. Do not comment generally known features of the java language.
 
-5. Always Mention Implementation-Independence
-When writing API code documentation in Java, you, as a developer, need to take care of the implementation on different platforms. Try to cover different angles that make the API work and cover extreme cases as well. The approach should always be clear and make proper use of the available tags.
+Example
+// Do a 3D transmogrification on the matrix.
+for (int i = 0; i < matrix.length; i++) {
+  for (int j = 0; j < matrix.length; j++) {
+    for (int k = 0; k < matrix.length; k++) {
+      values.transmogrify(matrix[i],matrix[j],matrix[k]);
+    }
+  }
+}
+
+4. Separate all binary operators, such as "+", "-", "*", "/", "%", etc., with a single space. The exception is unary operators, such as "++", "--", unary minus "-", etc, which do not need to be separated with a single space.
+Example
+public static void main(String[] arg) {
+    System.out.println("Hello" + " " + "World");
+  }
+  
