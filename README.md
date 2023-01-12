@@ -4,6 +4,7 @@
 
 
 Example
+
 float sumOfSquares = 0;
 final int DAYS_IN_YEAR = 365; //Use UPPER_CASE for constants (final variables)
 
@@ -13,6 +14,7 @@ final int DAYS_IN_YEAR = 365; //Use UPPER_CASE for constants (final variables)
 
 
 Example
+
 class President {
    //code...
 }
@@ -21,6 +23,7 @@ class President {
 
 
 Example
+
 // Do a 3D transmogrification on the matrix.
 for (int i = 0; i < matrix.length; i++) {
   for (int j = 0; j < matrix.length; j++) {
@@ -34,8 +37,8 @@ for (int i = 0; i < matrix.length; i++) {
 
 
 
-
 Example
+
 public static void main(String[] arg) {
     System.out.println("Hello" + " " + "World");
   }
